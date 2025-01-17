@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- modern-normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<script src="js/content.js"></script>
+<body>
+    <header>
+        <div class="container header">
+            <nav class="main-navigation">
+                <a href="index.html" class="logo-menu">
+                    <svg class="menu-open-button-svg" width="32px" height="32px">
+                        <use href="./images/sprite.svg#icon-dragon"></use>
+                    </svg>
+                </a>
+            </nav>
+            <form class="search-form">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button type="submit" class="search-button">
+                    <svg width="16px" height="16px">
+                        <use href="./images/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+            <button type="button" class="burger-button">
+                <svg class="menu-open-button-svg" width="32px" height="32px">
+                    <use href="./images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#">Profile</a></li>
+                <li class="menu-item"><a href="#">Favorite</a></li>
+                <li class="menu-item"><a href="#">Sign Out</a></li>
+                <li class="menu-item">
+                    <button type="button" class="upload-button">Upload</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <div class="container content-display">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer">
+            <a href="" class="discord-link">
+                <svg width="32px" height="32px">
+                    <use href="./images/sprite.svg#icon-discord"></use>
+                </svg> 
+            </a>
+        </div>
+    </footer>
+    <div class="upload-modal hidden">
+        <form id="upload-form" class="upload-form">
+            <h2 class="form-title">Upload Content</h2>
+            <label class="content-input">
+                Title:
+                <input type="text" id="title-input" name="title" class="title-input" placeholder="Enter title" required>
+            </label>
+            <label class="content-input">
+                Description:
+                <textarea id="description-input" name="description" class="description-input" placeholder="Enter description" maxlength="400"></textarea>
+            </label>
+            <div id="content-preview" class="content-preview">
+            </div>
+            <label class="content-input file-label">
+                Upload File:
+                <div class="file-wrapper">
+                    <input type="file" id="file-input" name="file" class="file-input" required>
+                    <span class="file-button">Choose File</span>
+                    <span id="file-text" class="file-text">No file chosen</span>
+                </div>
+            </label>            
+            <button type="submit" class="upload-content-button">Upload</button>
+            <button type="button" class="close-modal">
+                <svg class="menu-open-button-svg" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+    <script src="content.js"></script>
+</body>
+</html>

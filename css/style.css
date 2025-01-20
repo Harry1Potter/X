@@ -199,7 +199,7 @@ html, body {
     main {
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7), 
-            rgba(46, 47, 66, 0.7)), url(../images/dogs/ea-background.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/interface/ea-background.jpg);
         background-size: cover;
         background-position: center;
         display: block;

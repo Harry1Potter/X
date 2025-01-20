@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>Comments (0) - Be the first to comment!</p>
                 <div class="comment-box">
                     <div class="profile-image">
-                        <img src="./images/dogs/avatar-icon.jpg" alt="Profile Image">
+                        <img src="./images/interface/avatar-icon.jpg" alt="Profile Image">
                     </div>
                     <textarea placeholder="Write a Comment"></textarea>
                 </div>
